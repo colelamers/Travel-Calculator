@@ -1,0 +1,40 @@
+/* Address Book CSS */
+/* don't forget to validate at https://jigsaw.w3.org/css-validator/ */
+body {
+    font-size: 16px;
+    height: 100vh;
+    /* trick to make the "page" the full height */
+
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 2em;
+    color: #00FF00;
+}
+
+h1,h2 {
+    color: #ffff00;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+#div_labels1 {
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+
+  background-color: lightblue;
+}

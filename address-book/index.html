@@ -1,0 +1,81 @@
+<!doctype html>
+
+<!-- Address Book HTML -->
+<!-- don't forget to validate at https://validator.w3.org -->
+
+<html lang="en">
+
+    <head>
+        <!-- Where CSS and Meta Information Goes -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <!-- The text the user sees in browser tab -->
+        <title>Address Book 1.0</title>
+
+        <!-- this line is to include the FontAwesome icon set -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+
+        <!-- this line is to include Bootstrap formatting -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- This is how the web page knows about YOUR CSS file! -->
+        <link rel="stylesheet" type="text/css" href="address-book.css"/>
+
+    </head>
+    <body>
+        <!-- This is where all the VISIBLE web page content goes -->
+
+        <!-- outermost responsive container -->
+        <div class="container-fluid">
+
+            <!-- responsive row -->
+            <div id="address-book-row" class="row row-eq-height">
+
+                <!-- responsive column that fills half of desktop screen -->
+                <div id="add_col_1" class="col-sm-6">
+                    <!-- the element accessed in our JavaScript "click" -->
+                    <div class="row" id="div_labels1">
+                      <h1> Add New Contact</h1>
+
+                    <form>
+                      <div class="col-sm-6" id="labels1">
+                      <label for="fname">First name:</label><br><br>
+                      <label for="lname">Last name:</label><br><br>
+                      <label for="lname">Address:</label><br><br>
+                      <label for="lname">City:</label><br><br>
+                      <label for="lname">State:</label><br><br>
+                      <label for="lname">:</label><br><br>
+                    </div>
+
+                      <div class="col-sm-6" id="inputs1">
+                      <input type="text" id="fname" name="fname" value="First Name"><br><br>
+                      <input type="text" id="lname" name="lname" value="Last Name"><br><br>
+                      <input type="text" id="lname" name="lname" value="Last Name"><br><br>
+                      <input type="text" id="lname" name="lname" value="Last Name"><br><br>
+                      <input type="text" id="lname" name="lname" value="Last Name"><br><br>
+                      <input type="text" id="lname" name="lname" value="Last Name"><br><br>
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                  </div>
+
+                </div>
+                <!-- responsive column that fills half of desktop screen -->
+                <div id="address-book-column2" class="col-sm-6">
+
+                    <!-- empty element that will be filled via JavaScript -->
+                    <p>Address Book Options</p>
+
+                    <img src="bag.jpg" id="bag" alt="Fancy Bag for Fancy Person">
+
+                    <!-- icon here for no reason just to demonstrate -->
+                </div>
+            </div>
+        </div>
+
+        <!-- This is how the web page knows about YOUR JavaScript file! -->
+        <script src="address-book.js"></script>
+    </body>
+
+</html>
